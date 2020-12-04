@@ -1,0 +1,15 @@
+{
+  "load_extensions": {
+    "nbextensions_configurator/config_menu/main": true,
+    "contrib_nbextensions_help_item/main": true,
+    "python-markdown/main": true,
+    "toc2/main": true,
+    "collapsible_headings/main": true,
+    "vim_binding/vim_binding": true
+  },
+  "CodeCell": {
+      "cm_config": {
+        "lineNumbers": true
+      }
+  }
+}

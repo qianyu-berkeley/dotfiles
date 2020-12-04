@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2020 qianyu-berkeley
+Copyright (c) 2020 Qian Yu <qianyu@berkeley.edu>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

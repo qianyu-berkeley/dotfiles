@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+	colorflag="--color"
+	#export LS_COLORS=''
+else # macOS `ls`
+	colorflag="-G"
+	#export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
+fi
+
+# easy file listing
+alias ltr='ls -ltr ${colorflag}'
+alias latr='ls -latr ${colorflag}'
+alias ltrh='ls -ltrh ${colorflag}'
+
+# easy moving around
+alias cdd='cd ../'
+alias cddd='cd ../../'
+alias cdddd='cd ../../../'
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+
+# short commands
+alias vi='vim'
+alias h='history'
+alias c='clear'
+alias mv="mv -i"           # -i prompts before overwrite
+alias mkdir="mkdir -p"     # -p make parent dirs as needed
+alias df="df -h"           # -h prints human readable format
+alias dus="du -sh"         # -sh summary and prints human readable format
+alias duc="du -ch"         # -ch prints human readable format and total size
+alias duc1="du -ch -d 1"   # -ch prints human readable format and total size level 1
+alias R='open -na Rstudio'
+alias aws='~/.local/bin/aws'
+alias tmux='tmux -2'
+alias tmux_reload='tmux source-file ~/.tmux.conf'
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# top 5 process
+alias top_cpu='ps ax -r -e -o user,pid,%cpu,%mem,command |head -n 5'
+alias top_mem='ps ax -m -e -o user,pid,%cpu,%mem,command |head -n 5'
