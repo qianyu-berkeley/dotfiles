@@ -1,0 +1,31 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bash:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.gitconfig:
+    ~/.gitignore_global:
+    ~/.inputrc:
+    ~/.jupyter/jupyter_notebook_config.py: jupyter/jupyter_notebook_config.py
+    ~/.jupyter/nbconfig/notebook.json: jupyter/notebook.json
+    ~/.local/share/jupyter/nbextensions: jupyter/nbextensions
+    ~/.tmux.conf:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.zsh:
+    ~/.zshrc:
+
+- create:
+  - ~/.rtorrent/session
+  - ~/.rtorrent/watch
+  - ~/.rtorrent/downloads
+
+- shell:
+  #Installing/updating submodules 
+  - git submodule update --init --recursive
