@@ -17,9 +17,10 @@ Plugin 'tpope/vim-fugitive' " plugin on GitHub repo
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'kien/ctrlp.vim' "fuzzy find files
 Plugin 'klen/python-mode' "python mode
-Plugin 'Valloric/YouCompleteMe' "YCM
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'} "powerline
-
+"Plugin 'Valloric/YouCompleteMe' "YCM
+"Plugin 'klen/python-mode' "python mode
+Plugin 'vim-airline/vim-airline' "airline
+Plugin 'jeffkreeftmeijer/vim-numbertoggle' "number-toggle
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

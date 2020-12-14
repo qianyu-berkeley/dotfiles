@@ -6,25 +6,16 @@
 - clean: ['~']
 
 - link:
-    ~/.bash:
-    ~/.bash_profile:
-    ~/.bashrc:
-    ~/.gitconfig:
-    ~/.gitignore_global:
-    ~/.inputrc:
+    ~/.bash_profile: bash_profile
+    ~/.gitconfig: gitconfig
+    ~/.inputrc: inputrc
     ~/.jupyter/jupyter_notebook_config.py: jupyter/jupyter_notebook_config.py
     ~/.jupyter/nbconfig/notebook.json: jupyter/notebook.json
     ~/.local/share/jupyter/nbextensions: jupyter/nbextensions
-    ~/.tmux.conf:
-    ~/.vim:
-    ~/.vimrc:
-    ~/.zsh:
-    ~/.zshrc:
-
-- create:
-  - ~/.rtorrent/session
-  - ~/.rtorrent/watch
-  - ~/.rtorrent/downloads
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
 
 - shell:
   #Installing/updating submodules 
