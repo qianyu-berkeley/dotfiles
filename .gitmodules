@@ -17,3 +17,9 @@
 [submodule "vim/pack/vendor/start/vim-numbertoggle"]
 	path = vim/pack/vendor/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "tmux/.tmux-themepack"]
+	path = tmux/.tmux-themepack
+	url = https://github.com/jimeh/tmux-themepack.git
+[submodule "vim/pack/vendor/start/python-mode"]
+	path = vim/pack/vendor/start/python-mode
+	url = https://github.com/python-mode/python-mode.git

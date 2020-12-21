@@ -2,28 +2,27 @@ set nocompatible              " required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
+"Plugin 'gmarik/Vundle.vim'
 
 " Plugin utilities
-Plugin 'tpope/vim-fugitive' " plugin on GitHub repo
-Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plugin 'kien/ctrlp.vim' "fuzzy find files
-Plugin 'klen/python-mode' "python mode
+"Plugin 'tpope/vim-fugitive' " plugin on GitHub repo
+"Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
+"Plugin 'kien/ctrlp.vim' "fuzzy find files
+"Plugin 'klen/python-mode' "python mode
 "Plugin 'Valloric/YouCompleteMe' "YCM
 "Plugin 'klen/python-mode' "python mode
-Plugin 'vim-airline/vim-airline' "airline
-Plugin 'jeffkreeftmeijer/vim-numbertoggle' "number-toggle
+"Plugin 'vim-airline/vim-airline' "airline
+"Plugin 'jeffkreeftmeijer/vim-numbertoggle' "number-toggle
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+"call vundle#end()            " required
 
 " Automatix reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
@@ -40,10 +39,6 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-
-" easier moving between tabs
-map <Leader>n <esc>:tabprevious<CR>
-map <Leader>m <esc>:tabnext<CR>
 
 " map sort function to a key
 vnoremap <Leader>s :sort<CR>
@@ -122,7 +117,8 @@ set wildmenu
 set showcmd
 
 " my color scheme
-colorscheme monokai
+set background=dark
+colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
@@ -133,7 +129,4 @@ let g:NERDTreeQuitOnOpen=0
 " show hidden files in NERDTree
 let NERDTreeShowHidden=1
 " Toggle NERDTree
-nmap <Leader>t :NERDTreeToggle<cr>
-" close autocomplete window
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map <c-t> :NERDTreeToggle<cr>

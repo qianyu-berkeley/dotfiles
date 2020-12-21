@@ -30,6 +30,10 @@
 	wordRegex = "[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+"
 	compactionHeuristic = true
 
+[user]
+    name = Qian Yu
+    email = qian_yu@intuit.com
+
 [color]
 	ui = auto
 

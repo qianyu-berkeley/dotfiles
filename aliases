@@ -23,7 +23,8 @@ alias dt="cd ~/Desktop"
 
 # short commands
 alias vi='vim'
-alias h='history'
+alias gvim="mvim"
+alias h='history -50'
 alias c='clear'
 alias mv="mv -i"           # -i prompts before overwrite
 alias mkdir="mkdir -p"     # -p make parent dirs as needed
@@ -32,7 +33,7 @@ alias dus="du -sh"         # -sh summary and prints human readable format
 alias duc="du -ch"         # -ch prints human readable format and total size
 alias duc1="du -ch -d 1"   # -ch prints human readable format and total size level 1
 alias R='open -na Rstudio'
-alias aws='~/.local/bin/aws'
+#alias aws='~/.local/bin/aws'
 alias tmux='tmux -2'
 alias tmux_reload='tmux source-file ~/.tmux.conf'
 
@@ -48,3 +49,6 @@ alias path='echo -e ${PATH//:/\\n}'
 # top 5 process
 alias top_cpu='ps ax -r -e -o user,pid,%cpu,%mem,command |head -n 5'
 alias top_mem='ps ax -m -e -o user,pid,%cpu,%mem,command |head -n 5'
+
+# AWS related
+alias eiamCli_login='eiamCli getAWSTempSSHCert -a 052517444781 -p id_rsa_aws.pub'
