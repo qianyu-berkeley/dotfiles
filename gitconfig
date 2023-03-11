@@ -31,7 +31,7 @@
 	compactionHeuristic = true
 
 [user]
-    name = Qian Yu
+	name = qyu01
     email = qian_yu@intuit.com
 
 [color]
@@ -62,3 +62,10 @@
 
 [grep]
 	lineNumber = true
+[core]
+	editor = vim
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

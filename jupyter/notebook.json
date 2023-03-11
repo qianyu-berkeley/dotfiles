@@ -5,11 +5,14 @@
     "python-markdown/main": true,
     "toc2/main": true,
     "collapsible_headings/main": true,
-    "vim_binding/vim_binding": true
+    "vim_binding/vim_binding": true,
+    "codefolding/main": true,
+    "help_panel/help_penal": true,
+    "help_panel/help_panel": true
   },
   "CodeCell": {
-      "cm_config": {
-        "lineNumbers": true
-      }
+    "cm_config": {
+      "lineNumbers": true
+    }
   }
 }

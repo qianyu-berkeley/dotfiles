@@ -1,6 +1,9 @@
 set nocompatible              " required
 filetype off                  " required
 
+set mouse=a
+set foldcolumn=3
+
 " set the runtime path to include Vundle and initialize
 "set rtp+=~/.vim/bundle/Vundle.vim
 "call vundle#begin()
@@ -29,6 +32,15 @@ autocmd! bufwritepost .vimrc source %
 
 " set a map leader for more key combo
 let mapleader = ','
+
+" Show preview of folded doc string
+let g:SimpylFold_docstring_preview = 1
+
+" generate tags
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key Map
@@ -118,7 +130,7 @@ set showcmd
 
 " my color scheme
 set background=dark
-colorscheme solarized
+colorscheme nord
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
@@ -129,4 +141,4 @@ let g:NERDTreeQuitOnOpen=0
 " show hidden files in NERDTree
 let NERDTreeShowHidden=1
 " Toggle NERDTree
-map <c-t> :NERDTreeToggle<cr>
+map <c-\> :NERDTreeToggle<cr>

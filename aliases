@@ -49,3 +49,11 @@ alias path='echo -e ${PATH//:/\\n}'
 # top 5 process
 alias top_cpu='ps ax -r -e -o user,pid,%cpu,%mem,command |head -n 5'
 alias top_mem='ps ax -m -e -o user,pid,%cpu,%mem,command |head -n 5'
+
+# kubectl
+alias kb='kubectl'
+alias kbp='kubectl get pods'
+alias kbl='kubectl logs'
+alias kblf='kubectl logs -f'
+alias kblfc='kubectl -c spark-kubernetes-driver logs -f'
+

@@ -23,3 +23,12 @@
 [submodule "vim/pack/vendor/start/python-mode"]
 	path = vim/pack/vendor/start/python-mode
 	url = https://github.com/python-mode/python-mode.git
+[submodule "vim/pack/vendor/start/vim-gutentags"]
+	path = vim/pack/vendor/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "vim/pack/vendor/start/SimpylFold"]
+	path = vim/pack/vendor/start/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold.git
+[submodule "vim/pack/vendor/start/ack.vim"]
+	path = vim/pack/vendor/start/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
