@@ -8,11 +8,16 @@
     "vim_binding/vim_binding": true,
     "codefolding/main": true,
     "help_panel/help_penal": true,
-    "help_panel/help_panel": true
+    "help_panel/help_panel": true,
+    "code_prettify/autopep8": true
   },
   "CodeCell": {
     "cm_config": {
       "lineNumbers": true
     }
+  },
+  "toc2": {
+    "skip_h1_title": true,
+    "toc_cell": false
   }
 }
