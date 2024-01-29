@@ -1,6 +1,8 @@
 {
   "load_extensions": {
     "nbextensions_configurator/config_menu/main": true,
+    "jupyterlab-plotly/extension": true,
+    "jupyter-js-widgets/extension": true,
     "contrib_nbextensions_help_item/main": true,
     "python-markdown/main": true,
     "toc2/main": true,
@@ -16,8 +18,9 @@
       "lineNumbers": true
     }
   },
-  "toc2": {
-    "skip_h1_title": true,
-    "toc_cell": false
+  "collapsible_headings": {
+    "add_all_cells_button": true,
+    "make_toggle_controls_buttons": false,
+    "add_button": true
   }
 }
